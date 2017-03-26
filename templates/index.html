@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Parser</h3>
+      </div>
+      <hr/>
+      <div>
+
+      <form action="upload" method="post" enctype="multipart/form-data">
+          <h5 class="text-muted">Client:</h5>
+          <input type="text" name="text">
+          <h5 class="text-muted">Nessus Files:</h5>
+        <input type="file" name="nesfile" multiple><br /><br />
+
+          <h5 class="text-muted">Nexpose Files:</h5>
+          <input type="file" name="nexfile" multiple><br /><br />
+          <h5 class="text-muted">Acunetix Files:</h5>
+          <input type="file" name="acufile" multiple><br /><br />
+          <h5 class="text-muted">Burp Files:</h5>
+        <input type="file" name="burfile" multiple><br /><br />
+        <input type="submit" value="Upload">
+      </form>
+      </div>
+    </div>
+  </body>
+</html>

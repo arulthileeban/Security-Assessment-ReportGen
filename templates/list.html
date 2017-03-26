@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<table>
+    <form action="list_delete" method="post">
+        {% for item in items %}
+    <tr>
+        <td><input type="radio" name="id" value={{item[0]}} checked>{{item[1]}}</td>
+        <td>{{item[2]}}</td>
+    </td>
+{% endfor %}
+        <input type="submit" value="Delete">
+
+    </form>
+    <form action="build" method="post"><input type="submit" value="Build">
+        </form>
+
+</body>
+</html>
