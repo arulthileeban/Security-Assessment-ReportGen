@@ -47,6 +47,10 @@ def content_creation(ftitle):
     for i in cont:
         arr=[]
         for j in i:
+            t=0
+            if t==0:
+                t+=1
+                continue
             arr.append(str(j))
 
         if i[0] in names:
